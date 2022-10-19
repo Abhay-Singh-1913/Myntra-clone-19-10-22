@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png"
+            href="data:image/png;base64,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"
+            sizes="64x64"/>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="utils.css">
+        <title>Online Shopping for Women, Men, Kids Fashion & Lifestyle - Myntra</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="felx space-between align-center">
+                    <div class="left felx align-center ">
+                        <img
+                            src="https://www.freelogovectors.net/wp-content/uploads/2021/02/myntra-logo-freelogovectors.net_.png"
+                            alt="logo" class=""/>
+                        <ul class="nav uppercase felx bolder align-center">
+                            <li id="men"><a href="www.google.in">Men</a> </li>
+                            <li>Women</li>
+                            <li>Kids</li>
+                            <li>HOME & LIVING</li>
+                            <li>BEAUTY</li>
+                            <li>STUDIO <sup class="red">NEW</sup> </li>
+                        </ul>
+                    </div>
+                    <div class="right felx align-center">
+                        <input class="search"
+                            placeholder="Search for products,brands and more"/>
+                        <div class="profile mx-2 ">
+                            <!-- <img src="profile icon.png" alt="pro"><br> -->
+                            <p class="tag">Profile</p></div>
+                        <div class="wishlist mx-2">Wishlist</div>
+                        <div class="bag mx-2">Bag</div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img class="home" src="imghome.png" alt="home">
+                <div class="home felx">
+                    <img class="home"
+                        src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/10/19/283b6040-94e8-41e7-8220-4e96e4b20f0c1666158664721-DK-b1-599-2--999-12.gif"
+                        alt="plan"/>
+
+                </div>
+                <img class="home"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/10/3/b8cdf196-8b2b-4868-8d40-a610c13d48081664777002549-OMG-Deals.jpg"
+                    alt="plan"/>
+                <div class=" felx felxw home">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/ed7a9c6f-46fa-406a-ae55-f4e106ecaddb1664446228715-_Kurtas_for_day_festivities_UNDER_799_-1999-_from_Vishudh-_Global_Desi_-_more.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/a5aa15cc-ff06-499c-8d94-344c188598d31664446228723-_Premium_Traditional_wear_-_60-80_OFF_from_Soch_-_Biba_-_more.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/d088f69f-54eb-478d-8e2b-8dc649feb1801664446228736-adi-rbk_30-50.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/02fee1a9-548d-426e-a9a6-5a0dccd73a7f1664446228730-Adidas-Reebok_Sports_and_Casual_Shoes_30-50_OFF.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/42c07dce-3725-4e8f-9f5f-f3423b7065411664446228749-Allen_Solly_Sport-_PE_Casuals_STARTING_699_-1299-.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/f8bf1055-cc1b-4eb7-914c-c1610c39deab1664446228814-Best_of_Kids_International_Brands_-_Min_50_OFF.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/5e32b82d-abe1-437c-9cd2-ea5a7a721fa51664446228742-Allen_Solly-_Van_Heusen_-_More__-_Handbags_-Min_50.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/0f41129f-c253-43d8-a535-6ee9ac4153a71664446228822-Blackberry_and_Van_Hesuen_STARTING_699.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/56b9c750-6a59-4034-9674-1a0a3c2fec881664446228829-Boat_Airdopes_STARTING_-2990-999.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/37f26c69-4168-4d01-856a-8832c88ef3251664454901959-Crocs_-Sports_and_Casual_Shoes_UP_TO_50_OFF.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/1aadcad6-0def-4810-99be-5444866ca7861664446228865-Diwali__Collection_-_Sarees_-_Lehangas_.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/29/ff7bca4d-f571-42b0-9238-4357853c90471664446228872-Diwali_Collection_-_60-80_OFF_from__W-_Biba-_Aurelia_-_more.jpg"
+                        alt="item">
+                </div>
+                <img class="home"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/19/e5887c61-8682-4c49-b785-f2fe37ae91d31663583200397-Budget-Buys.jpg"
+                    alt="plan">
+                <div class=" felx felxw home">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/c5824af9-d9fa-482e-8469-7d66b55918fd1664350183554-Activewear_Unisex.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/c02fcf04-a3c1-46e7-8ea7-3509b6ac53bf1664350183566-Backpacks.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/c5cb71d8-66bb-44ab-b7e8-fa0d07d265541664350183572-Beauty-Essentials.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/dc597425-7041-4fb9-90f2-c9f0d29d37eb1664350183584-Belts-_-Wallets_.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/e2209fd7-6b1c-4b0d-9241-cb4b8b30da471664350183591-Bras-_-Briefs.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/47c4be8b-f6b3-4ac8-9cf6-17a03d9859c81664350183599-Casual-Shirts_.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/00f645d9-d186-4ce0-a3f0-303749c05c351664350183605-Casual-Shoes.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/9c8e0801-f760-41fc-9f55-881713f975a61664350183612-Clothing-Sets_Kids.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/c9495ac4-7e2d-4bce-8584-f712506c92241664350183618-Clutches.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/3b463fa8-f6ad-4ce7-bfaa-071b988f21fb1664350183631-Dresses_Kids.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/f6c4bec1-74de-4b85-af62-f483e72eda221664350183625-Dresses_.jpg"
+                        alt="item">
+                    <img class="item"
+                        src="https://assets.myntassets.com/f_webp,w_81,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/535d0e51-450f-4fcf-9ef0-fbeedbd7f18d1664350183638-Ethnic-Dresses.jpg"
+                        alt="item">
+                </div>
+                <img class="home"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/19/4cc74165-3286-49ec-81a5-2fa5d43595071663584460284-Top-Categories.jpg"
+                    alt="plan">
+                <div class=" felx felxw home">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/d3e82297-cca9-493a-888c-d3fc00c954bf1664353282286-Track-Pants.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/6efbe8fb-d89d-4f4e-a81f-b5a0615d568e1664351141233-T-Shirts_M.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/f75da228-1691-44c7-be0f-9ffb5405979a1664353380838-Tops-_-T-Shirts.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/eb9ea196-fdec-434a-9333-c92d0f9fce111664353393119-Activewear.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/3037b882-3e72-4179-a757-919f3e3332cc1664351140659-Lingerie.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/7c4aebd7-1426-4ec5-925e-944495d496021664351140851-Sleepwear.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/6eda281e-07fa-4454-8bac-1e0b98532df91664351140278-Formal-Shoes.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/67625246-5311-4a44-8c0f-49741ee3eacf1664351140506-Jeans_W.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/04327e3a-5237-4e7a-82de-c644074ddeea1664357577991-Trousers_UN.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/1a5f070e-0209-4ced-b22c-5c7db385f4691664351140131-Casual-Shirts.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/15bf30d3-db60-4c48-b1d2-39743d5ee9191664351140621-Kurtas-_-Sets.jpg"
+                        alt="item">
+                </div>
+                <div class=" felx felxw home">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/d257ee0f-2779-42a8-9a4b-73762912d9f81664351140429-Innerwear.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/06c8fdb4-3da9-47b9-befe-f1f0c21e6bc31664351140697-Loungewear-1.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/84572db8-ab26-4748-8f00-60b27d82ddd31664351141149-Trousers_M.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/8b9b9d49-9119-4b5e-b884-b05c561a48e61664351140792-Shorts.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/8d4bfe5e-7154-42be-a127-790a001ff4761664351140970-Suits.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/6efbe8fb-d89d-4f4e-a81f-b5a0615d568e1664351141233-T-Shirts_M.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/6442ec4e-45f4-46b6-8a99-f74f4eef62c31664351140060-Backpacks.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/9c865483-29ef-4a87-a772-4e586a40f2601664351140734-Messenger-Bags--Duffel-Bags-_-Rucksacks.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/2ad6edc7-a203-4b36-8d79-f57c6b846acf1664351140204-Ethnic-Dresses.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/6b87228a-cee2-40b5-ae7e-425636f88b8f1664351141294-Watches.jpg"
+                        alt="item">
+                    <img class="item1"
+                        src="https://assets.myntassets.com/f_webp,w_89,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/28/d3e82297-cca9-493a-888c-d3fc00c954bf1664353282286-Track-Pants.jpg"
+                        alt="item">
+                </div>
+                <img class="home"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/19/9425bd4f-7ca2-4b7d-b458-2f7e10dec7101663591409913-Top-Brands-At-Best-Prices.jpg"
+                    alt="plan">
+                <div class="home felxw felx">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/f67b7b8b-84e9-4fe9-af52-8cee433a9fd81664274578849-Roadster_1.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/4cc20bbd-2b7a-4387-ae62-f59cfb2147a11664274578727-M-H-_H-N.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/5bc29671-0daf-4f9e-bc15-93ade54b61c81664274578707-HRX-_Slazenger_1.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/c6d822c0-8114-4641-9512-12f56e72b1fa1664530420253-image_jpeg1491373051.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/fa3390f8-9c1f-48de-94e5-f15dfe8ed9251664530436373-image_jpeg_912263242.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/bd11952b-1d94-4b39-8146-995b00914f0f1664274578527-Anouk-_Sangria.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/61bde819-a809-4692-97ef-63d063f659261664274578520-Anouk-_AAY.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/1a3319aa-a85b-46b7-8673-b1fb46d547211664274578615-H-N-_Sangria.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/493d8f8d-5c0e-4abd-b5b1-14a3d31f2ce01664274578650-Here-Now_-_Moda_Rapido.jpg"
+                        alt="item">
+                    <img class="item2"
+                        src="https://assets.myntassets.com/f_webp,w_98,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/27/c0750e70-8f6f-40d1-b72b-0a2ff44263821664274578643-Here-Now.jpg"
+                        alt="item">
+                </div>
+                <img class="home"
+                    src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/19/3e4b1000-7f2a-4f5b-87ef-c23ec6b085041663584150362-Shop-By-Category.jpg"
+                    alt="plan">
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/78f23269-6901-4f67-9524-39a6e1121c7a1664516086100-Shop-by-Category_02.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/a620c89a-bf96-46a0-9beb-ed492f8f0cc91664516086108-Shop-by-Category_03.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/41a85b9f-ffa1-477b-9f04-402893ad34cb1664516086114-Shop-by-Category_04.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/a416a60d-a1a1-4439-849c-1f41f13a3e021664516086120-Shop-by-Category_05.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/f792dbc0-5851-4eee-911f-50d439b6e5cf1664516086128-Shop-by-Category_06.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/54d9e6c1-c162-4a69-b6cc-51a3752ce71a1664516086134-Shop-by-Category_07.jpg"
+                        alt="item">
+
+                </div>
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/481505fe-e76c-4239-852d-7fcacc8d7e361664516086141-Shop-by-Category_08.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/054c4547-fcfa-4c9a-8b7e-ccf9c510959b1664516086147-Shop-by-Category_09.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/ea99856b-ac10-41c6-bac0-8c77564f19d11664516086154-Shop-by-Category_10.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/dffe1236-e335-425f-bdda-580f1c7e98811664516086160-Shop-by-Category_11.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/2b838cb4-e186-47a1-9176-a0113faa102c1664516086167-Shop-by-Category_12.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/6d7f69cf-45b8-486a-8e4c-81536fb42f141664516086173-Shop-by-Category_13.jpg"
+                        alt="item">
+
+                </div>
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/801fa3b0-cc96-4437-9fcb-78a061b6fc081664516086189-Shop-by-Category_14.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/641df508-6c38-423a-be83-5fcbb1f4bc381664516086197-Shop-by-Category_15.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/47dc18a7-cd53-4af7-b3b0-6371cfa036901664516086204-Shop-by-Category_16.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/fcda7c93-6d0f-44cf-b3a3-1d791697cb481664516086212-Shop-by-Category_17.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/2d08eefb-cceb-4175-9996-789e54f956631664516086220-Shop-by-Category_18.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/03a6f607-21c9-4455-b6c3-5258340771561664516086227-Shop-by-Category_19.jpg"
+                        alt="item">
+
+                </div>
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/706f59ac-cb07-4dcb-811d-e4517d48a9d31664516086234-Shop-by-Category_20.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/3e264257-9482-4a60-b6c5-5f861c6804b41664516086241-Shop-by-Category_21.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/e199d3fd-0294-413d-b253-138c2cacb5381664516086248-Shop-by-Category_22.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/81fdf305-13ab-40f7-8ccd-39d1dda512c81664516086256-Shop-by-Category_23.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/ea9a8e11-8705-4f7c-88ba-5811c2ab9db81664516086263-Shop-by-Category_24.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/4bf154a4-afb8-4517-bc7d-9d3437bc9e121664516086271-Shop-by-Category_25.jpg"
+                        alt="item">
+
+                </div>
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/efff359f-9bb8-4c51-9588-f89f95364ce11664516086278-Shop-by-Category_26.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/b46ef5b1-7c49-4217-bf92-18983b7959481664516086285-Shop-by-Category_27.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/a34ac7dd-804e-4458-8738-f866908503a61664516086293-Shop-by-Category_28.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/49bc493c-9250-40b6-a1fb-8ba866a2b6891664516086300-Shop-by-Category_29.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/00c0f528-511c-42b8-88b1-a5f3f39e1afa1664516086309-Shop-by-Category_30.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/effd8822-2263-4f0d-9d51-6e8d5a9833b41664516086317-Shop-by-Category_31.jpg"
+                        alt="item">
+
+                </div>
+                <div class="home felxw felx">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/f730ebcf-530d-4e84-b12d-226f46be1ec81664516086368-Shop-by-Category_37.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/f730ebcf-530d-4e84-b12d-226f46be1ec81664516086368-Shop-by-Category_37.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/cb2d763d-04c7-4db7-9b46-5ebad2bfe9241664516086343-Shop-by-Category_34.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/88455ef9-b185-4223-b4cc-c4a14fbe78c71664516086351-Shop-by-Category_35.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/f730ebcf-530d-4e84-b12d-226f46be1ec81664516086368-Shop-by-Category_37.jpg"
+                        alt="item">
+                    <img class="item3"
+                        src="https://assets.myntassets.com/f_webp,w_163,c_limit,fl_progressive,dpr_2.0/assets/images/2022/9/30/f730ebcf-530d-4e84-b12d-226f46be1ec81664516086368-Shop-by-Category_37.jpg"
+                        alt="item">
+
+                </div>
+
+            </section>
+
+        </main>
+        <footer></footer>
+    </body>
+</html>
