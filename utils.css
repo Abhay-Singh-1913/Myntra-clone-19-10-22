@@ -27,7 +27,7 @@ margin-right: 12px;
     flex-wrap: wrap;
 }
 .item{
-    width: 116.8px;
+    width: 93.5px;
 }
 .icon{
     width: 20px;
@@ -55,15 +55,56 @@ margin-right: 12px;
 }
 .item1{
     padding: 0%;
-    width: 127.5px;
+    width: 102px;
 }
 .item2{
-    width: 140.2px;
+    width: 112.2px;
 }
 .item3{
-    width: 233.7px;
+    width: 186.7px;
 }
 .red{
     color: red;
     font-size: 11px;
+}
+strong{
+    font-weight: 500;
+}
+#profile {
+    width: 25px;
+    height: 22px;
+    padding: 0px 7px;
+}
+#wish{
+    width: 25px;
+    height: 21px;
+    padding: 0px 13px;
+
+}
+#bag{
+    width: 20px;
+    height: 20px;
+    padding: 0px 3px;
+}
+.head{
+    font-size:17px;
+}
+#black{
+    color:rgba(0, 0, 0, 0);
+    font-size: 14px;
+}
+a{
+    text-decoration: none;
+}
+.link a{
+        color: #696b79;
+        display: block;
+        font-size: 15px;
+        text-decoration: none;
+        padding-bottom: 5px;
+        cursor: pointer;
+        line-height: normal;
+}
+#icong{
+    height: 42px;;
 }

@@ -1,57 +1,99 @@
-body{
+body {
     margin: auto;
     padding: 0;
 }
-nav img{
+
+nav img {
     padding-top: 10px;
-    width: 67px;
-    height: 46px;
+    width: 62px;
+    height: 40px;
 }
-nav li{
+
+nav li {
     list-style: none;
-    padding: 20px;
+    padding: 10px;
     padding-right: 25px;
     font-weight: bold;
-    font-size: 19px;
+    font-size: 15px;
     color: #423e3e;
 }
-header{
-    padding:13px 0px ;
+
+header {
+    padding: 13px 0px;
     padding: 0%;
     padding-left: 2vw;
     margin: auto;
-    height: 100px;
+    height: 88px;
     position: sticky;
     top: 0%;
     background-color: white;
     border: 1px solid #e9e9e98c;
-    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-family: Whitney, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
 }
-section{
-background-color:#f9f9f9;
+
+section {
+    background-color: #f9f9f9;
 }
-nav{
-    font-size: 16px;
+
+nav {
+    font-size: 14px;
 }
-.search{
-    width: 127px;
-    height: 50px;
-    font-size: 17px;
+
+.search {
+    width: 105px;
+    height: 43px;
+    font-size: 14px;
     background-color: #f7f7f7;
     border: none;
     border-radius: 5px;
-    padding-right: 10px;
-    padding-left: 70px;
+    padding-right: 4px;
+    padding-left: 60px;
+    margin-top: 22px;
+    margin-bottom: 15px;
 }
-.home{ 
+
+.home {
     width: 98.5vw;
 }
-.right{
+
+.right {
     font-weight: bold;
 }
-#men{
-    padding-left:1px;
+
+#men {
+    padding-left: 1px;
 }
+
 footer{
-    margin: auto;
+    max-width: 1123px;
+    margin:0;
+    min-width: 980px;
+    font-size: 14px;
+    font-family: Whitney,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background-color: #fafbfc;
+}
+
+.footbox{
+    line-height: 18px;
+    color: #94969f;
+    font-size: 14px;
+    border-top: 1px solid #eaeaec;
+    margin: 15px 0 0;
+}
+.footbox strong {
+    color: #84868d !important;
+}
+p{
+    font-size: 14px;
+}
+footer a {
+    color: #535766 !important;
+}
+.footbox ol li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
 }
