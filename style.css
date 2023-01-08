@@ -97,3 +97,6 @@ footer a {
     text-indent: 0px !important;
     text-align: start !important;
 }
+strong .black{
+    color: black;
+}
